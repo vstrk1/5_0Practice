@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Human.h"
+#import "Runner.h"
+#import "Cycler.h"
+#import "Swimer.h"
+#import "Biorobot.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
+    Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
+    Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
+    Swimer* swimer = [[Swimer alloc] initWithParameters:@"Ustas" andSex:@"M" andAge:45 andHeigh:198.4f andWeigh:122.5f];
+    Biorobot* biorobot = [[Biorobot alloc] initWithParameters:@"Loren" andSex:@"F" andAge:35 andHeigh:166.f andWeigh:48.f andTypeOfProthesis: @"Hand"];
+    
+    NSLog(@"%@", [biorobot typeOfProsthesis]);
+    
+    NSArray* stackOfPeople = [NSArray arrayWithObjects:defaultHuman, runner, cycler, swimer, nil];
+    
+    for (Human* human in stackOfPeople) {
+        NSLog(@"__________________________");
+        NSLog(@"Name: %@", human.name);
+        NSLog(@"Sex: %@", human.sex);
+        NSLog(@"Age: %ld", human.age);
+        NSLog(@"Heigh: %.01f", human.heigh);
+        NSLog(@"Weigh: %.01f", human.weigh);
+        [human move];
+    }
+    
     return YES;
 }
 
