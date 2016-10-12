@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3325EB561DAEDC5900437F16 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3325EB551DAEDC5900437F16 /* Animal.m */; };
 		33490E451DAABD220093EB15 /* Cycler.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E441DAABD220093EB15 /* Cycler.m */; };
 		33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E4A1DAABDE90093EB15 /* Swimer.m */; };
 		33490E4E1DAABF870093EB15 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E4D1DAABF870093EB15 /* Runner.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3325EB541DAEDC5900437F16 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		3325EB551DAEDC5900437F16 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		33490E431DAABD220093EB15 /* Cycler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cycler.h; sourceTree = "<group>"; };
 		33490E441DAABD220093EB15 /* Cycler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cycler.m; sourceTree = "<group>"; };
 		33490E491DAABDE90093EB15 /* Swimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swimer.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				33490E4A1DAABDE90093EB15 /* Swimer.m */,
 				33490E4F1DAB82480093EB15 /* Biorobot.h */,
 				33490E501DAB82480093EB15 /* Biorobot.m */,
+				3325EB541DAEDC5900437F16 /* Animal.h */,
+				3325EB551DAEDC5900437F16 /* Animal.m */,
 				338DAB701DAAA157006BC83F /* AppDelegate.h */,
 				338DAB711DAAA157006BC83F /* AppDelegate.m */,
 				338DAB731DAAA157006BC83F /* ViewController.h */,
@@ -305,6 +310,7 @@
 				338DAB6F1DAAA157006BC83F /* main.m in Sources */,
 				338DABA21DAAA179006BC83F /* Human.m in Sources */,
 				33490E511DAB82480093EB15 /* Biorobot.m in Sources */,
+				3325EB561DAEDC5900437F16 /* Animal.m in Sources */,
 				33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */,
 				33490E451DAABD220093EB15 /* Cycler.m in Sources */,
 			);
