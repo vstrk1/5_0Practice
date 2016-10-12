@@ -16,4 +16,6 @@
 
 - (void) charge;
 
+- (id)initWithParameters: (NSString*) name andSex: (NSString*) sex andAge: (NSInteger) age
+                andHeigh: (CGFloat) heigh andWeigh: (CGFloat) weigh andTypeOfProthesis: (NSString*) typeOfProthesis;
 @end

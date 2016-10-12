@@ -27,13 +27,14 @@
     Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
     Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
     Swimer* swimer = [[Swimer alloc] initWithParameters:@"Ustas" andSex:@"M" andAge:45 andHeigh:198.4f andWeigh:122.5f];
-    Biorobot* biorobot = [[Biorobot alloc] initWithParameters:@"Loren" andSex:@"F" andAge:35 andHeigh:166.f andWeigh:48.f andTypeOfProthesis: @"Hand"];
+    Biorobot* robot = [[Biorobot alloc] initWithParameters:@"Angela" andSex:@"F" andAge:40 andHeigh:164.4f andWeigh:44.f andTypeOfProthesis:@"Hand"];
     
-    NSLog(@"%@", [biorobot typeOfProsthesis]);
     
-    NSArray* stackOfPeople = [NSArray arrayWithObjects:defaultHuman, runner, cycler, swimer, nil];
+    NSArray* stackOfPeople = [NSArray arrayWithObjects:defaultHuman, runner, cycler, swimer, robot, nil];
     
-    for (Human* human in stackOfPeople) {
+//    for (Human* human in stackOfPeople) {
+    
+    for (Human* human in [stackOfPeople reverseObjectEnumerator]) {
         NSLog(@"__________________________");
         NSLog(@"Name: %@", human.name);
         NSLog(@"Sex: %@", human.sex);
@@ -41,6 +42,11 @@
         NSLog(@"Heigh: %.01f", human.heigh);
         NSLog(@"Weigh: %.01f", human.weigh);
         [human move];
+        
+        if ([human isKindOfClass:[Biorobot class]]) {
+            Biorobot* tempRobot = (Biorobot* )human;
+            NSLog(@"Current battery: %ld%%", tempRobot.powerBalance);
+        }
     }
     
     return YES;
