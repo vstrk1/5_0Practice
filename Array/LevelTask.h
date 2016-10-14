@@ -15,5 +15,7 @@
 
 + (void) runLearnerTask;
 
++ (void) runStarTask;
+
 
 @end

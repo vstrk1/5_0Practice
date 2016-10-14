@@ -18,8 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [LevelTask runMaserTask];
-    
+    //[LevelTask runMaserTask];
+    //[LevelTask runLearnerTask];
+    [LevelTask runStarTask];
     return YES;
 }
 
