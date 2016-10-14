@@ -65,7 +65,7 @@
     NSArray* stackOfObjects = [NSArray arrayWithObjects:defaultHuman, runner, cycler, swimer, robot, defaultAnimal, leopard, ox, nil];
     for (NSObject* object in stackOfObjects) {
         NSLog(@"__________________________");
-        NSLog(@"%@", [object description]);
+        NSLog(@"%@", NSStringFromClass([object class]));
         if ([object isKindOfClass:[Human class]]) {
             Human* human = (Human* )object;
             NSLog(@"Name: %@", human.name);
@@ -82,7 +82,7 @@
         if ([object isKindOfClass:[Animal class]]) {
             Animal* animal = (Animal* )object;
             NSLog(@"Age: %ld", animal.age);
-            NSLog(@"Predator?: %hhu", animal.isPredator);
+            NSLog(@"%s", animal.isPredator ? "Predator" : "Herbivorous");
             NSLog(@"Speed: %ld", animal.speed);
             NSLog(@"Life: %ld", animal.life);
             [animal move];
