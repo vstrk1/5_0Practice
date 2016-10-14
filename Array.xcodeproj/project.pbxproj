@@ -21,6 +21,8 @@
 		338DAB881DAAA157006BC83F /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB871DAAA157006BC83F /* ArrayTests.m */; };
 		338DAB931DAAA157006BC83F /* ArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB921DAAA157006BC83F /* ArrayUITests.m */; };
 		338DABA21DAAA179006BC83F /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DABA11DAAA179006BC83F /* Human.m */; };
+		33B9BC031DB02461000C28B4 /* Leopard.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC021DB02461000C28B4 /* Leopard.m */; };
+		33B9BC061DB0279F000C28B4 /* Ox.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC051DB0279F000C28B4 /* Ox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		338DAB941DAAA157006BC83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338DABA01DAAA179006BC83F /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		338DABA11DAAA179006BC83F /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		33B9BC011DB02461000C28B4 /* Leopard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leopard.h; sourceTree = "<group>"; };
+		33B9BC021DB02461000C28B4 /* Leopard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leopard.m; sourceTree = "<group>"; };
+		33B9BC041DB0279F000C28B4 /* Ox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ox.h; sourceTree = "<group>"; };
+		33B9BC051DB0279F000C28B4 /* Ox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,10 @@
 				33490E501DAB82480093EB15 /* Biorobot.m */,
 				3325EB541DAEDC5900437F16 /* Animal.h */,
 				3325EB551DAEDC5900437F16 /* Animal.m */,
+				33B9BC011DB02461000C28B4 /* Leopard.h */,
+				33B9BC021DB02461000C28B4 /* Leopard.m */,
+				33B9BC041DB0279F000C28B4 /* Ox.h */,
+				33B9BC051DB0279F000C28B4 /* Ox.m */,
 				338DAB701DAAA157006BC83F /* AppDelegate.h */,
 				338DAB711DAAA157006BC83F /* AppDelegate.m */,
 				338DAB731DAAA157006BC83F /* ViewController.h */,
@@ -311,6 +321,8 @@
 				338DABA21DAAA179006BC83F /* Human.m in Sources */,
 				33490E511DAB82480093EB15 /* Biorobot.m in Sources */,
 				3325EB561DAEDC5900437F16 /* Animal.m in Sources */,
+				33B9BC031DB02461000C28B4 /* Leopard.m in Sources */,
+				33B9BC061DB0279F000C28B4 /* Ox.m in Sources */,
 				33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */,
 				33490E451DAABD220093EB15 /* Cycler.m in Sources */,
 			);

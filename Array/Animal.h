@@ -10,14 +10,13 @@
 
 @interface Animal : NSObject
 
-
 @property (assign, nonatomic) NSInteger age;
 @property (assign, nonatomic) NSInteger speed;
 @property (assign, nonatomic) NSInteger life;
 @property (assign, nonatomic) Boolean isPredator;
 
 
-- (id)initWithParameters: (NSInteger) age andLife: (NSInteger) life predatorOrNot: (Boolean) isPredator andSpeed: (NSInteger) speed;
+- (id)initWithParameters: (NSInteger) age andLife: (NSInteger) life andSpeed: (NSInteger) speed;
 
 - (void) move;
 

@@ -10,34 +10,33 @@
 
 @implementation Animal
 
-- (id)initWithParameters: (NSInteger) age andLife: (NSInteger) life predatorOrNot: (Boolean) isPredator andSpeed: (NSInteger) speed {
+- (id)initWithParameters: (NSInteger) age andLife: (NSInteger) life andSpeed: (NSInteger) speed {
     {
         self = [super init];
         if (self) {
             _life = life;
-            _isPredator = isPredator;
             _speed = speed;
             _age = age;
-            
+            _isPredator = false;
         }
         return self;
     }
 }
 
 - (void) move {
-        NSLog(@"I`m going!🚶");
+        NSLog(@"I`m going right now ! 🐾 🐾");
     }
 
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
         _life = 100.f;
-        _isPredator = true;
-        _speed = 60;
+        _isPredator = false;
+        _speed = 10;
         _age = 4;
-        return self;
     }
-    
+    return self;
 }
 @end
