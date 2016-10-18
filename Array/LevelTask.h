@@ -17,5 +17,7 @@
 
 + (void) runStarTask;
 
++ (void) runSupermanTask;
+
 
 @end

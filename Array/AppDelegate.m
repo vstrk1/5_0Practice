@@ -20,7 +20,9 @@
     
     //[LevelTask runMaserTask];
     //[LevelTask runLearnerTask];
-    [LevelTask runStarTask];
+    //[LevelTask runStarTask];
+    
+    [LevelTask runSupermanTask];
     return YES;
 }
 
