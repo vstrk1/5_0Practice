@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LevelTask.h"
+#import "Car.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,17 @@
     //[LevelTask runLearnerTask];
     //[LevelTask runStarTask];
     
-    [LevelTask runSupermanTask];
+    //[LevelTask runSupermanTask];
+    Car* newCar = [[Car alloc] init];
+    newCar.type = Mechanic;
+    newCar.nameOfCompany = Toyota;
+    newCar.model = @"Outlander";
+    
+    NSLog(@"Company: %@", [newCar convertToStringEnumValue:[newCar nameOfCompany]]);
+   
+    
+    
+    
     return YES;
 }
 
