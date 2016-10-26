@@ -24,6 +24,7 @@
 		33B9BC031DB02461000C28B4 /* Leopard.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC021DB02461000C28B4 /* Leopard.m */; };
 		33B9BC061DB0279F000C28B4 /* Ox.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC051DB0279F000C28B4 /* Ox.m */; };
 		33B9BC0C1DB0E8BE000C28B4 /* LevelTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */; };
+		33D754C31DC0B48F0072598C /* AlphaBattleship.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D754C21DC0B48F0072598C /* AlphaBattleship.m */; };
 		33F91DF11DB95BC800008B39 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F91DF01DB95BC800008B39 /* Car.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		33B9BC051DB0279F000C28B4 /* Ox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ox.m; sourceTree = "<group>"; };
 		33B9BC0A1DB0E8BE000C28B4 /* LevelTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTask.h; sourceTree = "<group>"; };
 		33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTask.m; sourceTree = "<group>"; };
+		33D754C11DC0B48F0072598C /* AlphaBattleship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaBattleship.h; sourceTree = "<group>"; };
+		33D754C21DC0B48F0072598C /* AlphaBattleship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaBattleship.m; sourceTree = "<group>"; };
 		33F91DEF1DB95BC800008B39 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		33F91DF01DB95BC800008B39 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +134,8 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				33D754C11DC0B48F0072598C /* AlphaBattleship.h */,
+				33D754C21DC0B48F0072598C /* AlphaBattleship.m */,
 				338DABA01DAAA179006BC83F /* Human.h */,
 				338DABA11DAAA179006BC83F /* Human.m */,
 				33490E4C1DAABF870093EB15 /* Runner.h */,
@@ -336,6 +341,7 @@
 				33B9BC061DB0279F000C28B4 /* Ox.m in Sources */,
 				33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */,
 				33490E451DAABD220093EB15 /* Cycler.m in Sources */,
+				33D754C31DC0B48F0072598C /* AlphaBattleship.m in Sources */,
 				33B9BC0C1DB0E8BE000C28B4 /* LevelTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
