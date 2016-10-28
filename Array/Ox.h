@@ -7,7 +7,13 @@
 //
 
 #import "Animal.h"
+#import "Swimmer.h"
 
-@interface Ox : Animal
+@interface Ox : Animal <Swimmer>
+
+@property (strong, nonatomic) NSString* name;
+
+- (void) swim;
+
 
 @end

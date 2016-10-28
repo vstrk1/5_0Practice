@@ -14,4 +14,13 @@
     NSLog(@"I`m swimming!🏊🏻");
 }
 
+- (void) swim {
+    NSLog(@"🏊🏻🏊🏻🏊🏻");
+}
+
+- (NSInteger) amountOfMedal{
+    NSLog(@"I have presubably: %ld medals 😎", _amountOfMedal);
+    return _amountOfMedal;
+}
+
 @end

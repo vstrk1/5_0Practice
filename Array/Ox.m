@@ -14,4 +14,8 @@
     NSLog(@"I`m going! Ding-dong! 🐂🔔🌾");
 }
 
+- (void) swim {
+     NSLog(@"I`m swimming..Like this..  🐂🌊");
+}
+
 @end

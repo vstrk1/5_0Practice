@@ -14,4 +14,12 @@
     NSLog(@"I`m running!🏃");
 }
 
+- (void) run {
+    NSLog(@"GO GO GO! 🏃💨");
+}
+
+- (void) takeDoping {
+    NSLog(@"Small dopping for being faster...");
+}
+
 @end

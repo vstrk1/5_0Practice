@@ -24,7 +24,9 @@
     if (self) {
         _typeOfProsthesis = typeOfProthesis;
         _powerBalance = 100;
-        
+        _jumpHeight = 14.22f;
+        _speed = 25.4f;
+        _exploisonType = Increddible;
     }
     return self;
 }
@@ -48,9 +50,34 @@
     if (!self.verifyPowerStatus) {
         [super move];
         NSLog(@"I`m fucking going as increddible BIOROBOT!!!🤖");
-        self.powerBalance -= 25;
+        self.powerBalance -= 10;
     }
     
 }
+
+- (void) jump {
+    if (!self.verifyPowerStatus) {
+        NSLog(@"I`m fucking jumping as increddible BIOROBOT!!!🤖");
+        self.powerBalance -= 40;
+    }
+    
+}
+- (void) swim {
+    if (!self.verifyPowerStatus) {
+        NSLog(@"I`m fucking swimming as increddible BIOROBOT!!!🤖");
+        self.powerBalance -= 30;
+    }
+    
+}
+- (void) run {
+    if (!self.verifyPowerStatus) {
+        [super move];
+        NSLog(@"I`m fucking running as increddible BIOROBOT!!!🤖");
+        self.powerBalance -= 15;
+    }
+    
+}
+
+
 
 @end

@@ -15,6 +15,8 @@
 #import "Animal.h"
 #import "Leopard.h"
 #import "Ox.h"
+#import "Jumper.h"
+#import "Fake.h"
 
 @implementation LevelTask
 
@@ -184,6 +186,104 @@
             [animal move];
         }
     }
+}
+
++ (void) runProtocolTask {
+    Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
+    
+    Swimer* testSwimmer = [[Swimer alloc] initWithParameters:@"Ustas" andSex:@"M" andAge:45 andHeigh:198.4f andWeigh:122.5f];
+    [testSwimmer setAmountOfMedal:34];
+    
+    Runner* testRunner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
+    [testRunner setExploisonType:Slow];
+    [testRunner setSpeed:15.35f];
+    
+    Jumper* testJumper = [[Jumper alloc] init];
+    [testJumper setDopingType:@"Methan"];
+    [testJumper setJumpHeight:144.2f];
+    
+    Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
+    
+    Biorobot* robot = [[Biorobot alloc] initWithParameters:@"Angela" andSex:@"F" andAge:40 andHeigh:164.4f andWeigh:44.f andTypeOfProthesis:@"Hand"];
+    [robot setSpeed:34.f];
+    [robot setExploisonType:Increddible];
+    [robot setJumpHeight:442.3f];
+    
+    Animal* defaultAnimal = [[Animal alloc]initWithParameters:12 andLife:100 andSpeed:10];
+    
+    Leopard* leopard = [[Leopard alloc]initWithParameters:4 andLife:100 andSpeed:99];
+    [leopard setName:@"Bars"];
+    [leopard setJumpHeight:250.3f];
+    
+    Ox* ox = [[Ox alloc]initWithParameters:19 andLife:100 andSpeed:4];
+    [ox setName:@"Mumu"];
+    
+    NSObject* fake = [[NSObject alloc] init];
+    
+    NSArray* stackOfObjects = [NSArray arrayWithObjects:defaultAnimal, fake, testRunner, cycler, testSwimmer, robot, leopard, ox, defaultHuman, testJumper, nil];
+    
+    
+    for (NSObject* object in stackOfObjects) {
+        NSLog(@"%@", NSStringFromClass([object class]));
+        if ([object isKindOfClass:[Human class]]) {
+            Human* human = (Human* )object;
+            NSLog(@"Name: %@", human.name);
+            NSLog(@"Sex: %@", human.sex);
+            NSLog(@"Age: %ld", human.age);
+            NSLog(@"Heigh: %.01f", human.heigh);
+            NSLog(@"Weigh: %.01f", human.weigh);
+            [human move];
+            
+            if ([human isKindOfClass:[Biorobot class]]) {
+                Biorobot* tempRobot = (Biorobot* )human;
+                NSLog(@"Current battery: %ld%%", tempRobot.powerBalance);
+            }
+        }
+        if ([object isKindOfClass:[Animal class]]) {
+            Animal* animal = (Animal* )object;
+            NSLog(@"Age: %ld", animal.age);
+            NSLog(@"%s", animal.isPredator ? "Predator" : "Herbivorous");
+            NSLog(@"Speed: %ld", animal.speed);
+            NSLog(@"Life: %ld", animal.life);
+            [animal move];
+        }
+        if ([object conformsToProtocol:@protocol(JumperInterface)]) {
+            id <JumperInterface> newObject = (id <JumperInterface>) object;
+            [newObject jumpHeight];
+            [newObject jump];
+            
+            if ([newObject respondsToSelector:@selector(takeDoping)]) {
+                [newObject takeDoping];
+            }
+            if ([newObject respondsToSelector:@selector(dopingType)]) {
+                [newObject dopingType];
+            }
+        }
+        
+        if ([object conformsToProtocol:@protocol(Swimmer)]) {
+            id <Swimmer> tempSwimmer = (id <Swimmer>) object;
+            [tempSwimmer swim];
+            if ([tempSwimmer respondsToSelector:@selector(amountOfMedal)]) {
+                [tempSwimmer amountOfMedal];
+            }
+        }
+        
+        if ([object conformsToProtocol:@protocol(Runners)]) {
+            id <Runners> tempRunner = (id <Runners>) object;
+            [tempRunner run];
+            NSLog(@"Speed: %f", [tempRunner speed]);
+            if ([tempRunner respondsToSelector:@selector(takeDoping)]) {
+                [tempRunner takeDoping];
+            }
+        }
+        
+        
+        NSLog(@"__________________________");
+    }
+    
+    
+    
+    
 }
 
 @end

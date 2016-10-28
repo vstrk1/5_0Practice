@@ -7,8 +7,12 @@
 //
 
 #import "Animal.h"
+#import "JumperInterface.h"
 
-@interface Leopard : Animal
+@interface Leopard : Animal <JumperInterface>
+
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) CGFloat jumpHeight;
 
 
 @end

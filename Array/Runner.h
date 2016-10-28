@@ -7,7 +7,11 @@
 //
 
 #import "Human.h"
+#import "Runners.h"
 
-@interface Runner : Human
+@interface Runner : Human <Runners>
+
+@property (assign, nonatomic) CGFloat speed;
+@property (assign, nonatomic) ExplosionType exploisonType;
 
 @end

@@ -19,5 +19,7 @@
 
 + (void) runSupermanTask;
 
++ (void) runProtocolTask;
+
 
 @end

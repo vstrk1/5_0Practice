@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Human.h"
+#import "Swimmer.h"
 
-@interface Swimer : Human
+@interface Swimer : Human <Swimmer>
+
+
+@property (assign, nonatomic) NSInteger amountOfMedal;
+
 
 @end

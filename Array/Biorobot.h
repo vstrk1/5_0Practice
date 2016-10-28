@@ -7,12 +7,18 @@
 //
 
 #import "Human.h"
+#import "JumperInterface.h"
+#import "Swimmer.h"
+#import "Runners.h"
 
-@interface Biorobot : Human
+@interface Biorobot : Human <JumperInterface, Swimmer, Runners>
 
 
 @property (strong, nonatomic) NSString* typeOfProsthesis;
 @property (assign, nonatomic) NSInteger powerBalance;
+@property (assign, nonatomic) CGFloat jumpHeight;
+@property (assign, nonatomic) CGFloat speed;
+@property (assign, nonatomic) ExplosionType exploisonType;
 
 - (void) charge;
 

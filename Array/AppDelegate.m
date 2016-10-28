@@ -23,6 +23,7 @@
     //[LevelTask runMaserTask];
     //[LevelTask runLearnerTask];
     //[LevelTask runStarTask];
+    [LevelTask runProtocolTask];
     
     //[LevelTask runSupermanTask];
 //    Car* newCar = [[Car alloc] init];
@@ -31,16 +32,10 @@
 //    newCar.model = @"Outlander";
 //    
 //    NSLog(@"Company: %@", [newCar convertToStringEnumValue:[newCar nameOfCompany]]);
-    
-    AlphaBattleship* onePlay = [[AlphaBattleship alloc]init];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
-    [onePlay fire];
+//    AlphaBattleship* onePlay = [[AlphaBattleship alloc]init];
+//    [onePlay fire];
+//    [onePlay fire];
+//    [onePlay fire];
     
     
     return YES;

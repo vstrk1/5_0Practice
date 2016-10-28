@@ -20,8 +20,12 @@
     }
 }
 
+- (void) jump {
+    NSLog(@"Prepare to death, bitch 🐯");
+}
 - (void) move {
     NSLog(@"Meeeeeoww!! I want to eat you!! 🐆");
 }
+
 
 @end
