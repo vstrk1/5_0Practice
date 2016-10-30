@@ -16,7 +16,7 @@
 #import "Leopard.h"
 #import "Ox.h"
 #import "Jumper.h"
-#import "Fake.h"
+#import "Student.h"
 
 @implementation LevelTask
 
@@ -276,14 +276,43 @@
                 [tempRunner takeDoping];
             }
         }
-        
-        
         NSLog(@"__________________________");
     }
+}
+
++ (void) runNSDictionaryTask {
+    Student* student1 = [[Student alloc] initWithFname:@"Jihn" andLname:@"Lenon" andHelloMessage:@"Hello, Bitch!!"];
+    Student* student2 = [[Student alloc] initWithFname:@"Indi" andLname:@"Terk" andHelloMessage:@"Hello-o-o-o-o-o, Bitch!!"];
+    Student* student3 = [[Student alloc] initWithFname:@"Lixi" andLname:@"Au" andHelloMessage:@"Nihao"];
+    Student* student4 = [[Student alloc] initWithFname:@"Aoshi" andLname:@"Mura" andHelloMessage:@"Bueno tarde"];
+    Student* student5 = [[Student alloc] initWithFname:@"Lisa" andLname:@"Ann" andHelloMessage:@"Lets do smthng"];
+    Student* student6 = [[Student alloc] initWithFname:@"Niss" andLname:@"Divur" andHelloMessage:@"Alloha!"];
+    Student* student7 = [[Student alloc] initWithFname:@"Olig" andLname:@"Theresty" andHelloMessage:@"Vitaju!!"];
+    
+        
     
     
+    NSDictionary* journal = @{[student1 studentInfo] : student1,
+                              [student2 studentInfo] : student2,
+                              [student3 studentInfo] : student3,
+                              [student4 studentInfo] : student4,
+                              [student5 studentInfo] : student5,
+                              [student6 studentInfo] : student6,
+                              [student7 studentInfo] : student7
+                              };
     
     
+//    for (NSString *string in [journal allKeys]) {
+//        NSLog(@"%@", [journal objectForKey:string]);
+//    }
+    //NSLog(@"%@", journal);
+    
+    NSArray *sortedKeys = [[journal allKeys] sortedArrayUsingSelector: @selector(compare:)];
+   
+    for (NSString *sortedKey in sortedKeys) {
+        Student* tempStudent = [journal valueForKey:sortedKey];
+        NSLog(@"%@", [tempStudent sayHello]);
+    }
 }
 
 @end

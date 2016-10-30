@@ -25,9 +25,9 @@
 		33B9BC061DB0279F000C28B4 /* Ox.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC051DB0279F000C28B4 /* Ox.m */; };
 		33B9BC0C1DB0E8BE000C28B4 /* LevelTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */; };
 		33D754C31DC0B48F0072598C /* AlphaBattleship.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D754C21DC0B48F0072598C /* AlphaBattleship.m */; };
+		33D896071DC3AA150037B3D4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D896061DC3AA150037B3D4 /* Student.m */; };
 		33F91DF11DB95BC800008B39 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F91DF01DB95BC800008B39 /* Car.m */; };
 		33FCD63F1DC34EB5003BEA49 /* Jumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCD63E1DC34EB5003BEA49 /* Jumper.m */; };
-		33FCD6441DC36937003BEA49 /* Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCD6431DC36937003BEA49 /* Fake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,14 +85,14 @@
 		33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTask.m; sourceTree = "<group>"; };
 		33D754C11DC0B48F0072598C /* AlphaBattleship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaBattleship.h; sourceTree = "<group>"; };
 		33D754C21DC0B48F0072598C /* AlphaBattleship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaBattleship.m; sourceTree = "<group>"; };
+		33D896051DC3AA150037B3D4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		33D896061DC3AA150037B3D4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		33F91DEF1DB95BC800008B39 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		33F91DF01DB95BC800008B39 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		33FCD63D1DC34EB5003BEA49 /* Jumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jumper.h; sourceTree = "<group>"; };
 		33FCD63E1DC34EB5003BEA49 /* Jumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jumper.m; sourceTree = "<group>"; };
 		33FCD6401DC34F48003BEA49 /* JumperInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumperInterface.h; sourceTree = "<group>"; };
 		33FCD6411DC355D7003BEA49 /* Runners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runners.h; sourceTree = "<group>"; };
-		33FCD6421DC36937003BEA49 /* Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fake.h; sourceTree = "<group>"; };
-		33FCD6431DC36937003BEA49 /* Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fake.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,44 +143,21 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				33FCD6401DC34F48003BEA49 /* JumperInterface.h */,
-				333D8FAA1DC164D1009FD589 /* Swimmer.h */,
-				33FCD6411DC355D7003BEA49 /* Runners.h */,
-				33FCD63D1DC34EB5003BEA49 /* Jumper.h */,
-				33FCD63E1DC34EB5003BEA49 /* Jumper.m */,
-				33D754C11DC0B48F0072598C /* AlphaBattleship.h */,
-				33D754C21DC0B48F0072598C /* AlphaBattleship.m */,
-				338DABA01DAAA179006BC83F /* Human.h */,
-				338DABA11DAAA179006BC83F /* Human.m */,
-				33490E4C1DAABF870093EB15 /* Runner.h */,
-				33490E4D1DAABF870093EB15 /* Runner.m */,
-				33490E431DAABD220093EB15 /* Cycler.h */,
-				33490E441DAABD220093EB15 /* Cycler.m */,
-				33490E491DAABDE90093EB15 /* Swimer.h */,
-				33490E4A1DAABDE90093EB15 /* Swimer.m */,
-				33490E4F1DAB82480093EB15 /* Biorobot.h */,
-				33490E501DAB82480093EB15 /* Biorobot.m */,
-				3325EB541DAEDC5900437F16 /* Animal.h */,
-				3325EB551DAEDC5900437F16 /* Animal.m */,
-				33B9BC011DB02461000C28B4 /* Leopard.h */,
-				33B9BC021DB02461000C28B4 /* Leopard.m */,
-				33B9BC041DB0279F000C28B4 /* Ox.h */,
-				33B9BC051DB0279F000C28B4 /* Ox.m */,
+				33D8960A1DC3AB5F0037B3D4 /* AlphaBattleship */,
+				33D896091DC3AB340037B3D4 /* Car */,
+				33D896081DC3AACC0037B3D4 /* HumansAndAnimals */,
+				33D896041DC3A9E20037B3D4 /* Dictionary */,
 				338DAB701DAAA157006BC83F /* AppDelegate.h */,
 				338DAB711DAAA157006BC83F /* AppDelegate.m */,
 				338DAB731DAAA157006BC83F /* ViewController.h */,
 				338DAB741DAAA157006BC83F /* ViewController.m */,
+				33B9BC0A1DB0E8BE000C28B4 /* LevelTask.h */,
+				33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */,
 				338DAB761DAAA157006BC83F /* Main.storyboard */,
 				338DAB791DAAA157006BC83F /* Assets.xcassets */,
 				338DAB7B1DAAA157006BC83F /* LaunchScreen.storyboard */,
 				338DAB7E1DAAA157006BC83F /* Info.plist */,
 				338DAB6D1DAAA157006BC83F /* Supporting Files */,
-				33B9BC0A1DB0E8BE000C28B4 /* LevelTask.h */,
-				33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */,
-				33F91DEF1DB95BC800008B39 /* Car.h */,
-				33F91DF01DB95BC800008B39 /* Car.m */,
-				33FCD6421DC36937003BEA49 /* Fake.h */,
-				33FCD6431DC36937003BEA49 /* Fake.m */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -209,6 +186,61 @@
 				338DAB941DAAA157006BC83F /* Info.plist */,
 			);
 			path = ArrayUITests;
+			sourceTree = "<group>";
+		};
+		33D896041DC3A9E20037B3D4 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				33D896051DC3AA150037B3D4 /* Student.h */,
+				33D896061DC3AA150037B3D4 /* Student.m */,
+			);
+			name = Dictionary;
+			sourceTree = "<group>";
+		};
+		33D896081DC3AACC0037B3D4 /* HumansAndAnimals */ = {
+			isa = PBXGroup;
+			children = (
+				338DABA01DAAA179006BC83F /* Human.h */,
+				338DABA11DAAA179006BC83F /* Human.m */,
+				33490E4C1DAABF870093EB15 /* Runner.h */,
+				33490E4D1DAABF870093EB15 /* Runner.m */,
+				33490E431DAABD220093EB15 /* Cycler.h */,
+				33490E441DAABD220093EB15 /* Cycler.m */,
+				33490E491DAABDE90093EB15 /* Swimer.h */,
+				33490E4A1DAABDE90093EB15 /* Swimer.m */,
+				33490E4F1DAB82480093EB15 /* Biorobot.h */,
+				33490E501DAB82480093EB15 /* Biorobot.m */,
+				33FCD6401DC34F48003BEA49 /* JumperInterface.h */,
+				333D8FAA1DC164D1009FD589 /* Swimmer.h */,
+				33FCD6411DC355D7003BEA49 /* Runners.h */,
+				33FCD63D1DC34EB5003BEA49 /* Jumper.h */,
+				33FCD63E1DC34EB5003BEA49 /* Jumper.m */,
+				3325EB541DAEDC5900437F16 /* Animal.h */,
+				3325EB551DAEDC5900437F16 /* Animal.m */,
+				33B9BC011DB02461000C28B4 /* Leopard.h */,
+				33B9BC021DB02461000C28B4 /* Leopard.m */,
+				33B9BC041DB0279F000C28B4 /* Ox.h */,
+				33B9BC051DB0279F000C28B4 /* Ox.m */,
+			);
+			name = HumansAndAnimals;
+			sourceTree = "<group>";
+		};
+		33D896091DC3AB340037B3D4 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				33F91DEF1DB95BC800008B39 /* Car.h */,
+				33F91DF01DB95BC800008B39 /* Car.m */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		33D8960A1DC3AB5F0037B3D4 /* AlphaBattleship */ = {
+			isa = PBXGroup;
+			children = (
+				33D754C11DC0B48F0072598C /* AlphaBattleship.h */,
+				33D754C21DC0B48F0072598C /* AlphaBattleship.m */,
+			);
+			name = AlphaBattleship;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +385,10 @@
 				33F91DF11DB95BC800008B39 /* Car.m in Sources */,
 				338DABA21DAAA179006BC83F /* Human.m in Sources */,
 				33490E511DAB82480093EB15 /* Biorobot.m in Sources */,
-				33FCD6441DC36937003BEA49 /* Fake.m in Sources */,
 				3325EB561DAEDC5900437F16 /* Animal.m in Sources */,
 				33B9BC031DB02461000C28B4 /* Leopard.m in Sources */,
 				33B9BC061DB0279F000C28B4 /* Ox.m in Sources */,
+				33D896071DC3AA150037B3D4 /* Student.m in Sources */,
 				33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */,
 				33490E451DAABD220093EB15 /* Cycler.m in Sources */,
 				33D754C31DC0B48F0072598C /* AlphaBattleship.m in Sources */,

@@ -23,7 +23,9 @@
     //[LevelTask runMaserTask];
     //[LevelTask runLearnerTask];
     //[LevelTask runStarTask];
-    [LevelTask runProtocolTask];
+    //[LevelTask runProtocolTask];
+    
+    [LevelTask runNSDictionaryTask];
     
     //[LevelTask runSupermanTask];
 //    Car* newCar = [[Car alloc] init];

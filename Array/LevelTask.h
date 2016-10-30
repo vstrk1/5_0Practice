@@ -21,5 +21,7 @@
 
 + (void) runProtocolTask;
 
++ (void) runNSDictionaryTask;
+
 
 @end
