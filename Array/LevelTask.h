@@ -23,5 +23,7 @@
 
 + (void) runNSDictionaryTask;
 
++ (void) runDelegateTask;
+
 
 @end

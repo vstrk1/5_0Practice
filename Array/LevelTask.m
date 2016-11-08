@@ -17,6 +17,9 @@
 #import "Ox.h"
 #import "Jumper.h"
 #import "Student.h"
+#import "Patient.h"
+#import "Doctor.h"
+#import "Znahar.h"
 
 @implementation LevelTask
 
@@ -312,6 +315,51 @@
     for (NSString *sortedKey in sortedKeys) {
         Student* tempStudent = [journal valueForKey:sortedKey];
         NSLog(@"%@", [tempStudent sayHello]);
+    }
+}
+
++ (void) runDelegateTask {
+    Doctor* doctor = [[Doctor alloc]init];
+    Znahar* znachar = [[Znahar alloc]init];
+    Patient* patient1 = [[Patient alloc] init];
+    patient1.name = @"Peter";
+    patient1.temperature = 36.4f;
+    patient1.feelingState = BETTER;
+    patient1.headAche = true;
+    
+    Patient* patient2 = [[Patient alloc] init];
+    patient2.name = @"Chan";
+    patient2.temperature = 40.4f;
+    patient2.feelingState = WORSE;
+    patient2.headAche = true;
+    
+    Patient* patient3 = [[Patient alloc] init];
+    patient3.name = @"Judzyk";
+    patient3.temperature = 35.4f;
+    patient3.feelingState = BETTER;
+    patient3.headAche = false;
+    
+    NSArray* array = [NSArray arrayWithObjects:patient1, patient2, patient3, nil];
+    
+    for (Patient *patient in array) {
+        NSLog(@"Name: %@", patient.name);
+        patient.delegate = doctor;
+        [patient feelingWorse];
+        if (patient.doctorRate < 4) {
+            NSLog(@"I am displease ! I go to the Znahar");
+            patient.delegate = znachar;
+        }
+        NSLog(@"_____________________________");
+    }
+    [doctor generateReport];
+    
+    NSLog(@"_____________________________");
+    NSLog(@"_____________________________");
+    
+    for (Patient *nextDayPatient in array) {
+        NSLog(@"Name: %@", nextDayPatient.name);
+        NSLog(@"I going to the %@!", NSStringFromClass([nextDayPatient.delegate class]));
+        
     }
 }
 

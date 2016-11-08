@@ -12,6 +12,7 @@
 		33490E4B1DAABDE90093EB15 /* Swimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E4A1DAABDE90093EB15 /* Swimer.m */; };
 		33490E4E1DAABF870093EB15 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E4D1DAABF870093EB15 /* Runner.m */; };
 		33490E511DAB82480093EB15 /* Biorobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E501DAB82480093EB15 /* Biorobot.m */; };
+		3349A9871DD0C4FC007F07D9 /* Znahar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3349A9861DD0C4FC007F07D9 /* Znahar.m */; };
 		338DAB6F1DAAA157006BC83F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB6E1DAAA157006BC83F /* main.m */; };
 		338DAB721DAAA157006BC83F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB711DAAA157006BC83F /* AppDelegate.m */; };
 		338DAB751DAAA157006BC83F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB741DAAA157006BC83F /* ViewController.m */; };
@@ -26,6 +27,8 @@
 		33B9BC0C1DB0E8BE000C28B4 /* LevelTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BC0B1DB0E8BE000C28B4 /* LevelTask.m */; };
 		33D754C31DC0B48F0072598C /* AlphaBattleship.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D754C21DC0B48F0072598C /* AlphaBattleship.m */; };
 		33D896071DC3AA150037B3D4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D896061DC3AA150037B3D4 /* Student.m */; };
+		33D8960F1DC69F850037B3D4 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8960E1DC69F850037B3D4 /* Patient.m */; };
+		33D896121DC6A1B60037B3D4 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D896111DC6A1B60037B3D4 /* Doctor.m */; };
 		33F91DF11DB95BC800008B39 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F91DF01DB95BC800008B39 /* Car.m */; };
 		33FCD63F1DC34EB5003BEA49 /* Jumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCD63E1DC34EB5003BEA49 /* Jumper.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,8 @@
 		33490E4D1DAABF870093EB15 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
 		33490E4F1DAB82480093EB15 /* Biorobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biorobot.h; sourceTree = "<group>"; };
 		33490E501DAB82480093EB15 /* Biorobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biorobot.m; sourceTree = "<group>"; };
+		3349A9851DD0C4FC007F07D9 /* Znahar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Znahar.h; sourceTree = "<group>"; };
+		3349A9861DD0C4FC007F07D9 /* Znahar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Znahar.m; sourceTree = "<group>"; };
 		338DAB6A1DAAA157006BC83F /* Array.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Array.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DAB6E1DAAA157006BC83F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		338DAB701DAAA157006BC83F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +92,11 @@
 		33D754C21DC0B48F0072598C /* AlphaBattleship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaBattleship.m; sourceTree = "<group>"; };
 		33D896051DC3AA150037B3D4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		33D896061DC3AA150037B3D4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		33D8960D1DC69F850037B3D4 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		33D8960E1DC69F850037B3D4 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		33D896101DC6A1B60037B3D4 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		33D896111DC6A1B60037B3D4 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		33D896131DC6A62F0037B3D4 /* PatientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDelegate.h; sourceTree = "<group>"; };
 		33F91DEF1DB95BC800008B39 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		33F91DF01DB95BC800008B39 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		33FCD63D1DC34EB5003BEA49 /* Jumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jumper.h; sourceTree = "<group>"; };
@@ -143,6 +153,7 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				33D8960C1DC691740037B3D4 /* Delegates */,
 				33D8960A1DC3AB5F0037B3D4 /* AlphaBattleship */,
 				33D896091DC3AB340037B3D4 /* Car */,
 				33D896081DC3AACC0037B3D4 /* HumansAndAnimals */,
@@ -241,6 +252,20 @@
 				33D754C21DC0B48F0072598C /* AlphaBattleship.m */,
 			);
 			name = AlphaBattleship;
+			sourceTree = "<group>";
+		};
+		33D8960C1DC691740037B3D4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				33D8960D1DC69F850037B3D4 /* Patient.h */,
+				33D8960E1DC69F850037B3D4 /* Patient.m */,
+				33D896101DC6A1B60037B3D4 /* Doctor.h */,
+				33D896111DC6A1B60037B3D4 /* Doctor.m */,
+				33D896131DC6A62F0037B3D4 /* PatientDelegate.h */,
+				3349A9851DD0C4FC007F07D9 /* Znahar.h */,
+				3349A9861DD0C4FC007F07D9 /* Znahar.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33490E4E1DAABF870093EB15 /* Runner.m in Sources */,
+				33D8960F1DC69F850037B3D4 /* Patient.m in Sources */,
+				33D896121DC6A1B60037B3D4 /* Doctor.m in Sources */,
 				338DAB751DAAA157006BC83F /* ViewController.m in Sources */,
+				3349A9871DD0C4FC007F07D9 /* Znahar.m in Sources */,
 				338DAB721DAAA157006BC83F /* AppDelegate.m in Sources */,
 				338DAB6F1DAAA157006BC83F /* main.m in Sources */,
 				33FCD63F1DC34EB5003BEA49 /* Jumper.m in Sources */,
