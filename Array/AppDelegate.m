@@ -20,13 +20,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+   
+    
+    [LevelTask runNotificationTask];
+    
+    
     //[LevelTask runMaserTask];
     //[LevelTask runLearnerTask];
     //[LevelTask runStarTask];
     //[LevelTask runProtocolTask];
     
     //[LevelTask runNSDictionaryTask];
-    [LevelTask runDelegateTask];
+    //[LevelTask runDelegateTask];
+    
+    
     
     //[LevelTask runSupermanTask];
 //    Car* newCar = [[Car alloc] init];

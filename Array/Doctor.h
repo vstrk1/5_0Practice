@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Patient.h"
+#import "Government.h"
 
 @interface Doctor : NSObject<PatientDelegate>
 

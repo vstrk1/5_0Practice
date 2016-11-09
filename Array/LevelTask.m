@@ -20,6 +20,9 @@
 #import "Patient.h"
 #import "Doctor.h"
 #import "Znahar.h"
+#import "Government.h"
+#import "Pensioner.h"
+#import "Businessman.h"
 
 @implementation LevelTask
 
@@ -363,4 +366,16 @@
     }
 }
 
++ (void) runNotificationTask {
+    Government* gov = [[Government alloc]init];
+    Doctor* tempDoctor = [[Doctor alloc]init];
+    Pensioner* tempPensioner = [[Pensioner alloc]init];
+    Businessman* businessman = [[Businessman alloc]init];
+    
+    
+    gov.tax = 14.f;
+    gov.salary += 200.f;
+    gov.averagePrice += 500.f;
+    gov.pension -= 200.4f;
+}
 @end

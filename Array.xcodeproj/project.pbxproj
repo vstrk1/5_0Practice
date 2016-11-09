@@ -13,6 +13,9 @@
 		33490E4E1DAABF870093EB15 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E4D1DAABF870093EB15 /* Runner.m */; };
 		33490E511DAB82480093EB15 /* Biorobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 33490E501DAB82480093EB15 /* Biorobot.m */; };
 		3349A9871DD0C4FC007F07D9 /* Znahar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3349A9861DD0C4FC007F07D9 /* Znahar.m */; };
+		334E9BB21DD3376600757AA3 /* Government.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB11DD3376600757AA3 /* Government.m */; };
+		334E9BB51DD337FE00757AA3 /* Pensioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB41DD337FE00757AA3 /* Pensioner.m */; };
+		334E9BB81DD3383100757AA3 /* Businessman.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB71DD3383100757AA3 /* Businessman.m */; };
 		338DAB6F1DAAA157006BC83F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB6E1DAAA157006BC83F /* main.m */; };
 		338DAB721DAAA157006BC83F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB711DAAA157006BC83F /* AppDelegate.m */; };
 		338DAB751DAAA157006BC83F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB741DAAA157006BC83F /* ViewController.m */; };
@@ -64,6 +67,12 @@
 		33490E501DAB82480093EB15 /* Biorobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biorobot.m; sourceTree = "<group>"; };
 		3349A9851DD0C4FC007F07D9 /* Znahar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Znahar.h; sourceTree = "<group>"; };
 		3349A9861DD0C4FC007F07D9 /* Znahar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Znahar.m; sourceTree = "<group>"; };
+		334E9BB01DD3376600757AA3 /* Government.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Government.h; sourceTree = "<group>"; };
+		334E9BB11DD3376600757AA3 /* Government.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Government.m; sourceTree = "<group>"; };
+		334E9BB31DD337FE00757AA3 /* Pensioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pensioner.h; sourceTree = "<group>"; };
+		334E9BB41DD337FE00757AA3 /* Pensioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pensioner.m; sourceTree = "<group>"; };
+		334E9BB61DD3383100757AA3 /* Businessman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Businessman.h; sourceTree = "<group>"; };
+		334E9BB71DD3383100757AA3 /* Businessman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Businessman.m; sourceTree = "<group>"; };
 		338DAB6A1DAAA157006BC83F /* Array.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Array.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DAB6E1DAAA157006BC83F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		338DAB701DAAA157006BC83F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +139,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334E9BAF1DD3372A00757AA3 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				334E9BB01DD3376600757AA3 /* Government.h */,
+				334E9BB11DD3376600757AA3 /* Government.m */,
+				334E9BB31DD337FE00757AA3 /* Pensioner.h */,
+				334E9BB41DD337FE00757AA3 /* Pensioner.m */,
+				334E9BB61DD3383100757AA3 /* Businessman.h */,
+				334E9BB71DD3383100757AA3 /* Businessman.m */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
 		338DAB611DAAA157006BC83F = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +175,7 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				334E9BAF1DD3372A00757AA3 /* Notifications */,
 				33D8960C1DC691740037B3D4 /* Delegates */,
 				33D8960A1DC3AB5F0037B3D4 /* AlphaBattleship */,
 				33D896091DC3AB340037B3D4 /* Car */,
@@ -402,9 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334E9BB21DD3376600757AA3 /* Government.m in Sources */,
 				33490E4E1DAABF870093EB15 /* Runner.m in Sources */,
+				334E9BB81DD3383100757AA3 /* Businessman.m in Sources */,
 				33D8960F1DC69F850037B3D4 /* Patient.m in Sources */,
 				33D896121DC6A1B60037B3D4 /* Doctor.m in Sources */,
+				334E9BB51DD337FE00757AA3 /* Pensioner.m in Sources */,
 				338DAB751DAAA157006BC83F /* ViewController.m in Sources */,
 				3349A9871DD0C4FC007F07D9 /* Znahar.m in Sources */,
 				338DAB721DAAA157006BC83F /* AppDelegate.m in Sources */,

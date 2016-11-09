@@ -14,9 +14,20 @@
     self = [super init];
     if (self) {
         _stackWithPatients = [[NSMutableDictionary alloc]init];
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(salaryChange:) name:GovernmentSalaryValueChangeNotification object:nil];
     }
     return self;
 }
+
+- (void) salaryChange: (NSNotification*) notification {
+    NSLog(@"Doctors notification, %@", notification.userInfo);
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
 - (void) patientFeelsNotOk: (Patient*) patient {
     IllOrgan organ = arc4random()%4;
     patient.doctorRate = arc4random()%6;
@@ -49,13 +60,13 @@
             break;
     }
     
-//    if (patient.temperature  < 37.0f || !patient.headAche) {
-//        [patient takePill];
-//    } else if (patient.temperature > 37.f && patient.temperature < 40.f) {
-//        [patient takePill];
-//    } else{
-//        [patient takeShot];
-//    }
+    //    if (patient.temperature  < 37.0f || !patient.headAche) {
+    //        [patient takePill];
+    //    } else if (patient.temperature > 37.f && patient.temperature < 40.f) {
+    //        [patient takePill];
+    //    } else{
+    //        [patient takeShot];
+    //    }
 }
 
 
@@ -81,9 +92,9 @@
 }
 
 - (void) generateReport {
-//    for (id object in _stackWithPatients) {
-//        NSLog(@"Patient %@ came with %@ problem ", object, [object valueForKey:object]);
-//    }
+    //    for (id object in _stackWithPatients) {
+    //        NSLog(@"Patient %@ came with %@ problem ", object, [object valueForKey:object]);
+    //    }
     
     NSArray *sortedNames = [_stackWithPatients keysSortedByValueUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         return [obj1 compare:obj2];
