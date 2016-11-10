@@ -11,4 +11,7 @@
 
 @interface Businessman : NSObject
 
+@property (assign, nonatomic) CGFloat averagePriceddd;
+
+
 @end

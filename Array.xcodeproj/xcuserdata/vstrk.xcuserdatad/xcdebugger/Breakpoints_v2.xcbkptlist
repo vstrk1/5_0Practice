@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/LevelTask.m"
-            timestampString = "500400124.400382"
+            timestampString = "500473806.187573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "+runProtocolTask"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/LevelTask.m"
-            timestampString = "500400124.400382"
+            timestampString = "500473806.187573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "+runProtocolTask"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/LevelTask.m"
-            timestampString = "500400124.400382"
+            timestampString = "500473806.187573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "+runProtocolTask"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/LevelTask.m"
-            timestampString = "500400124.400382"
+            timestampString = "500473806.187573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
             landmarkName = "+runProtocolTask"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/Doctor.m"
-            timestampString = "500399340.688903"
+            timestampString = "500469047.278531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-generateReport"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/Doctor.m"
-            timestampString = "500399340.688903"
+            timestampString = "500469047.278531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-patientFeelsNotOk:"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/Doctor.m"
-            timestampString = "500399340.688903"
+            timestampString = "500469047.278531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-generateReport"
             landmarkType = "7">
          </BreakpointContent>
@@ -198,15 +198,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/AppDelegate.m"
-            timestampString = "500394487.491206"
+            timestampString = "500476602.457387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
@@ -228,16 +228,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Array/Pensioner.m"
+            timestampString = "500474138.182517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-averagePriceChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Array/LevelTask.m"
-            timestampString = "500400124.400382"
+            timestampString = "500473806.187573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
-            landmarkName = "+runNotificationTask"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
+            landmarkName = "-runNotificationTask"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

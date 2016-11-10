@@ -34,6 +34,7 @@
 		33D896121DC6A1B60037B3D4 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D896111DC6A1B60037B3D4 /* Doctor.m */; };
 		33F91DF11DB95BC800008B39 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F91DF01DB95BC800008B39 /* Car.m */; };
 		33FCD63F1DC34EB5003BEA49 /* Jumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCD63E1DC34EB5003BEA49 /* Jumper.m */; };
+		33FF6ECF1DD4A50D00CD809D /* CustomAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FF6ECE1DD4A50D00CD809D /* CustomAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		33FCD63E1DC34EB5003BEA49 /* Jumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jumper.m; sourceTree = "<group>"; };
 		33FCD6401DC34F48003BEA49 /* JumperInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumperInterface.h; sourceTree = "<group>"; };
 		33FCD6411DC355D7003BEA49 /* Runners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runners.h; sourceTree = "<group>"; };
+		33FF6ECD1DD4A50D00CD809D /* CustomAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAppDelegate.h; sourceTree = "<group>"; };
+		33FF6ECE1DD4A50D00CD809D /* CustomAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				334E9BB41DD337FE00757AA3 /* Pensioner.m */,
 				334E9BB61DD3383100757AA3 /* Businessman.h */,
 				334E9BB71DD3383100757AA3 /* Businessman.m */,
+				33FF6ECD1DD4A50D00CD809D /* CustomAppDelegate.h */,
+				33FF6ECE1DD4A50D00CD809D /* CustomAppDelegate.m */,
 			);
 			name = Notifications;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FF6ECF1DD4A50D00CD809D /* CustomAppDelegate.m in Sources */,
 				334E9BB21DD3376600757AA3 /* Government.m in Sources */,
 				33490E4E1DAABF870093EB15 /* Runner.m in Sources */,
 				334E9BB81DD3383100757AA3 /* Businessman.m in Sources */,

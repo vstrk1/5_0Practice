@@ -11,4 +11,6 @@
 
 @interface Pensioner : NSObject
 
+@property (assign, nonatomic) CGFloat pension;
+
 @end

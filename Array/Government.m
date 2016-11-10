@@ -29,7 +29,7 @@ NSString* const GovernmentAverageUserInfoKey = @"GovernmentAverageUserInfoKey";
         _tax = 10.f;
         _salary = 2000.f;
         _pension = 1200.50f;
-        _averagePrice = 200.f;
+        _averagePrice = 100.f;
     }
     return self;
 }

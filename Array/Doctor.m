@@ -16,12 +16,18 @@
         _stackWithPatients = [[NSMutableDictionary alloc]init];
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
         [nc addObserver:self selector:@selector(salaryChange:) name:GovernmentSalaryValueChangeNotification object:nil];
+        [nc addObserver:self selector:@selector(averagePriceChange:) name:GovernmentAveragePriceChangeNotification object:nil];
     }
     return self;
 }
 
 - (void) salaryChange: (NSNotification*) notification {
-    NSLog(@"Doctors notification, %@", notification.userInfo);
+    NSLog(@"Doctors salary notification, %@", notification.userInfo);
+}
+
+- (void) averagePriceChange: (NSNotification*) notification {
+    
+    NSLog(@"AveragePrice changed notification for doctors, %@", notification.userInfo);
 }
 
 - (void)dealloc {

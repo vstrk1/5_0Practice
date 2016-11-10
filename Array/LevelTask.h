@@ -25,6 +25,6 @@
 
 + (void) runDelegateTask;
 
-+ (void) runNotificationTask;
+- (void) runNotificationTask;
 
 @end

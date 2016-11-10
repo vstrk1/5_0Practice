@@ -24,6 +24,11 @@
 #import "Pensioner.h"
 #import "Businessman.h"
 
+@interface LevelTask()
+
+@property (strong, nonatomic) Pensioner* pensioner;
+@end
+
 @implementation LevelTask
 
 + (void) runLearnerTask {
@@ -366,16 +371,16 @@
     }
 }
 
-+ (void) runNotificationTask {
+- (void) runNotificationTask {
     Government* gov = [[Government alloc]init];
     Doctor* tempDoctor = [[Doctor alloc]init];
-    Pensioner* tempPensioner = [[Pensioner alloc]init];
+    self.pensioner = [[Pensioner alloc]init];
     Businessman* businessman = [[Businessman alloc]init];
     
     
     gov.tax = 14.f;
     gov.salary += 200.f;
-    gov.averagePrice += 500.f;
+    gov.averagePrice = 100.f;
     gov.pension -= 200.4f;
 }
 @end
