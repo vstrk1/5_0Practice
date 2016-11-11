@@ -11,6 +11,15 @@
 @implementation Patient
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self performSelector:@selector(feelingWorseTreatmentSelf) withObject:nil afterDelay:arc4random()%4 + 3];
+    }
+    return self;
+}
+
 NSString * const FormatType_toString[] = {
     [BETTER] = @"BETTER",
     [WORSE] = @"WORSE"
@@ -35,7 +44,7 @@ NSString * const FormatType_toString[] = {
         [self stayWorse];
         [self takeShot];
     }
-   
+    
 }
 
 - (void) takeShot {
@@ -47,8 +56,22 @@ NSString * const FormatType_toString[] = {
     NSLog(@"I feeling not ok.. maybe need to go to the doctor");
     NSLog(@"I going to the %@!", NSStringFromClass([self.delegate class]));
     [self.delegate patientFeelsNotOk:self];
-
 }
+
+
+- (void) feelingWorseTreatmentSelf{
+    NSLog(@"I feeling not ok.. there is need to do something..");
+    decisionIllBlock(self);
+}
+void (^decisionIllBlock) (Patient*) = ^(Patient* patient) {
+    if (patient.temperature  < 37.0f || !patient.headAche) {
+        [patient takePill];
+    } else if (patient.temperature > 37.f && patient.temperature < 40.f) {
+        [patient takePill];
+    } else{
+        [patient takeShot];
+    }
+};
 
 
 @end

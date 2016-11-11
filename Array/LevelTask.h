@@ -11,20 +11,22 @@
 @interface LevelTask : NSObject
 
 
-+ (void) runMaserTask;
+- (void) runMaserTask;
 
-+ (void) runLearnerTask;
+- (void) runLearnerTask;
 
-+ (void) runStarTask;
+- (void) runStarTask;
 
-+ (void) runSupermanTask;
+- (void) runSupermanTask;
 
-+ (void) runProtocolTask;
+- (void) runProtocolTask;
 
-+ (void) runNSDictionaryTask;
+- (void) runNSDictionaryTask;
 
-+ (void) runDelegateTask;
+- (void) runDelegateTask;
 
 - (void) runNotificationTask;
+
+- (void) runBloksTask;
 
 @end

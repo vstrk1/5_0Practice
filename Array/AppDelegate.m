@@ -24,33 +24,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-//    self.task = [[LevelTask alloc]init];
-//    [self.task runNotificationTask];
-    self.customDelegate = [[CustomAppDelegate alloc]init];
-    
-    //[LevelTask runMaserTask];
-    //[LevelTask runLearnerTask];
-    //[LevelTask runStarTask];
-    //[LevelTask runProtocolTask];
-    
-    //[LevelTask runNSDictionaryTask];
-    //[LevelTask runDelegateTask];
-    
-    
-    
-    //[LevelTask runSupermanTask];
-//    Car* newCar = [[Car alloc] init];
-//    newCar.type = Mechanic;
-//    newCar.nameOfCompany = Toyota;
-//    newCar.model = @"Outlander";
-//    
-//    NSLog(@"Company: %@", [newCar convertToStringEnumValue:[newCar nameOfCompany]]);
-//    AlphaBattleship* onePlay = [[AlphaBattleship alloc]init];
-//    [onePlay fire];
-//    [onePlay fire];
-//    [onePlay fire];
-    
+
+    self.task = [[LevelTask alloc]init];
+    [self.task runBloksTask];
     
     return YES;
 }

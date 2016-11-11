@@ -31,6 +31,9 @@ extern NSString * const FormatType_toString[];
 
 @interface Patient : NSObject
 
+/** There is temporary provided code blick instead own Patient delegate
+ 
+ */
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) CGFloat temperature;
 @property (assign, nonatomic) BOOL headAche;
@@ -42,6 +45,7 @@ extern NSString * const FormatType_toString[];
 - (void) takePill;
 - (void) takeShot;
 - (void) feelingWorse;
+- (void) feelingWorseTreatmentSelf;
 
 - (void) stayWorse;
 - (void) stayBetter;

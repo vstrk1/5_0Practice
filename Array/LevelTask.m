@@ -23,6 +23,7 @@
 #import "Government.h"
 #import "Pensioner.h"
 #import "Businessman.h"
+#import "BStudent.h"
 
 @interface LevelTask()
 
@@ -31,7 +32,7 @@
 
 @implementation LevelTask
 
-+ (void) runLearnerTask {
+- (void) runLearnerTask {
     Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
     Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
     Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
@@ -54,7 +55,7 @@
     }
 }
 
-+ (void) runMaserTask {
+- (void) runMaserTask {
     Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
     Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
     Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
@@ -93,7 +94,7 @@
     }
 }
 
-+ (void) runStarTask {
+- (void) runStarTask {
     Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
     Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
     Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
@@ -135,7 +136,7 @@
     }
 }
 
-+ (void) runSupermanTask {
+- (void) runSupermanTask {
     Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
     Runner* runner = [[Runner alloc] initWithParameters:@"Julia" andSex:@"F" andAge:28 andHeigh:166.6f andWeigh:54.3f];
     Cycler* cycler = [[Cycler alloc] initWithParameters:@"Yaroslav" andSex:@"M" andAge:29 andHeigh:179.22f andWeigh:70.f];
@@ -199,7 +200,7 @@
     }
 }
 
-+ (void) runProtocolTask {
+- (void) runProtocolTask {
     Human* defaultHuman = [[Human alloc] initWithParameters:@"Joseph" andSex:@"M" andAge:21 andHeigh:178.f andWeigh:77.f];
     
     Swimer* testSwimmer = [[Swimer alloc] initWithParameters:@"Ustas" andSex:@"M" andAge:45 andHeigh:198.4f andWeigh:122.5f];
@@ -291,7 +292,7 @@
     }
 }
 
-+ (void) runNSDictionaryTask {
+- (void) runNSDictionaryTask {
     Student* student1 = [[Student alloc] initWithFname:@"Jihn" andLname:@"Lenon" andHelloMessage:@"Hello, Bitch!!"];
     Student* student2 = [[Student alloc] initWithFname:@"Indi" andLname:@"Terk" andHelloMessage:@"Hello-o-o-o-o-o, Bitch!!"];
     Student* student3 = [[Student alloc] initWithFname:@"Lixi" andLname:@"Au" andHelloMessage:@"Nihao"];
@@ -300,7 +301,7 @@
     Student* student6 = [[Student alloc] initWithFname:@"Niss" andLname:@"Divur" andHelloMessage:@"Alloha!"];
     Student* student7 = [[Student alloc] initWithFname:@"Olig" andLname:@"Theresty" andHelloMessage:@"Vitaju!!"];
     
-        
+    
     
     
     NSDictionary* journal = @{[student1 studentInfo] : student1,
@@ -313,20 +314,20 @@
                               };
     
     
-//    for (NSString *string in [journal allKeys]) {
-//        NSLog(@"%@", [journal objectForKey:string]);
-//    }
+    //    for (NSString *string in [journal allKeys]) {
+    //        NSLog(@"%@", [journal objectForKey:string]);
+    //    }
     //NSLog(@"%@", journal);
     
     NSArray *sortedKeys = [[journal allKeys] sortedArrayUsingSelector: @selector(compare:)];
-   
+    
     for (NSString *sortedKey in sortedKeys) {
         Student* tempStudent = [journal valueForKey:sortedKey];
         NSLog(@"%@", [tempStudent sayHello]);
     }
 }
 
-+ (void) runDelegateTask {
+- (void) runDelegateTask {
     Doctor* doctor = [[Doctor alloc]init];
     Znahar* znachar = [[Znahar alloc]init];
     Patient* patient1 = [[Patient alloc] init];
@@ -373,14 +374,107 @@
 
 - (void) runNotificationTask {
     Government* gov = [[Government alloc]init];
-    Doctor* tempDoctor = [[Doctor alloc]init];
+    //Doctor* tempDoctor = [[Doctor alloc]init];
+    //Businessman* businessman = [[Businessman alloc]init];
     self.pensioner = [[Pensioner alloc]init];
-    Businessman* businessman = [[Businessman alloc]init];
-    
     
     gov.tax = 14.f;
     gov.salary += 200.f;
     gov.averagePrice = 100.f;
     gov.pension -= 200.4f;
 }
+
+
+- (void) runBloksTask {
+    Patient* patient = [[Patient alloc] init];
+    patient.name = @"Changson";
+    patient.temperature = 42.4f;
+    patient.feelingState = WORSE;
+    patient.headAche = true;
+    
+    NSLog(@"___________________");
+
+    
+    testSimpleBlock();
+    simpleBlockWithString(@"simple string");
+    [self verifyString:blockVerifyLenghtOfString andInputString:@"12345"];
+    NSLog(@"___________________________________");
+    BStudent *student1 = [[BStudent alloc]init];
+    student1.fNmame = @"Mikle";
+    student1.lName = @"Serious";
+    BStudent *student2 = [[BStudent alloc]init];
+    student2.fNmame = @"Brad";
+    student2.lName = @"Danger";
+    BStudent *student3 = [[BStudent alloc]init];
+    student3.fNmame = @"Ili";
+    student3.lName = @"Sangru";
+    BStudent *student4 = [[BStudent alloc]init];
+    student4.fNmame = @"Dude";
+    student4.lName = @"Black";
+    BStudent *student5 = [[BStudent alloc]init];
+    student5.fNmame = @"Alex";
+    student5.lName = @"Stirliz";
+    BStudent *student6 = [[BStudent alloc]init];
+    student6.fNmame = @"Mike";
+    student6.lName = @"Dank";
+    BStudent *student7 = [[BStudent alloc]init];
+    student7.fNmame = @"Brit";
+    student7.lName = @"Spoonge";
+    BStudent *student8 = [[BStudent alloc]init];
+    student8.fNmame = @"Oleg";
+    student8.lName = @"Serious";
+    BStudent *student9 = [[BStudent alloc]init];
+    student9.fNmame = @"Ilyia";
+    student9.lName = @"UnterBridge";
+    BStudent *student10 = [[BStudent alloc]init];
+    student10.fNmame = @"Gala";
+    student10.lName = @"Sunrize";
+    
+    NSArray *studentsArray = [NSArray arrayWithObjects:student1, student2, student3, student4, student5,
+                              student6, student7, student8, student9, student10, nil];
+    NSArray *sortedArray = [studentsArray sortedArrayUsingComparator:studentsComparator];
+    
+    for (BStudent *student in sortedArray) {
+        NSLog(@"%@: %@, %@;", student, student.fNmame, student.lName);
+    }
+}
+
+NSComparisonResult (^studentsComparator) (id, id) = ^(id obj1, id obj2) {
+    NSString *obj1LName = [(BStudent*)obj1 lName];
+    NSString *obj2LName = [(BStudent*)obj2 lName];
+    
+    
+    if ([obj1LName isEqualToString:obj2LName]) {
+        return [[(BStudent*)obj1 fNmame] compare:[(BStudent*)obj2 fNmame]];
+    } else {
+        return [obj1LName compare:obj2LName];
+    }
+};
+
+- (void) verifyString: (BOOL (^) (NSString*)) inputBlock andInputString: (NSString*) string {
+    if (inputBlock(string)) {
+        NSLog(@"Current string is more than 5 sybmols - correct");
+    } else {
+        NSLog(@"Current string is less than 5 symbols - incorrect");
+    }
+}
+
+void (^testSimpleBlock)(void) = ^{
+    NSLog(@"Test simple block was performed");
+};
+
+void (^simpleBlockWithString) (NSString*) = ^(NSString* inputStringParameter){
+    NSLog(@"Simple block was performed, input string: %@", inputStringParameter);
+};
+
+BOOL (^blockVerifyLenghtOfString) (NSString*) = ^(NSString* inputStringParameter){
+    if ([inputStringParameter length] < 5) {
+        return NO;
+    } else {
+        return YES;
+    }
+};
+
+
+
 @end

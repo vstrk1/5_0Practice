@@ -35,6 +35,7 @@
 		33F91DF11DB95BC800008B39 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F91DF01DB95BC800008B39 /* Car.m */; };
 		33FCD63F1DC34EB5003BEA49 /* Jumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCD63E1DC34EB5003BEA49 /* Jumper.m */; };
 		33FF6ECF1DD4A50D00CD809D /* CustomAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FF6ECE1DD4A50D00CD809D /* CustomAppDelegate.m */; };
+		33FF6ED41DD5CF2300CD809D /* BStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FF6ED31DD5CF2300CD809D /* BStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		33FCD6411DC355D7003BEA49 /* Runners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runners.h; sourceTree = "<group>"; };
 		33FF6ECD1DD4A50D00CD809D /* CustomAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAppDelegate.h; sourceTree = "<group>"; };
 		33FF6ECE1DD4A50D00CD809D /* CustomAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAppDelegate.m; sourceTree = "<group>"; };
+		33FF6ED21DD5CF2300CD809D /* BStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BStudent.h; sourceTree = "<group>"; };
+		33FF6ED31DD5CF2300CD809D /* BStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,7 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				33FF6ED11DD5CEFD00CD809D /* Blocks */,
 				334E9BAF1DD3372A00757AA3 /* Notifications */,
 				33D8960C1DC691740037B3D4 /* Delegates */,
 				33D8960A1DC3AB5F0037B3D4 /* AlphaBattleship */,
@@ -294,6 +298,15 @@
 				3349A9861DD0C4FC007F07D9 /* Znahar.m */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		33FF6ED11DD5CEFD00CD809D /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				33FF6ED21DD5CF2300CD809D /* BStudent.h */,
+				33FF6ED31DD5CF2300CD809D /* BStudent.m */,
+			);
+			name = Blocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +449,7 @@
 				334E9BB81DD3383100757AA3 /* Businessman.m in Sources */,
 				33D8960F1DC69F850037B3D4 /* Patient.m in Sources */,
 				33D896121DC6A1B60037B3D4 /* Doctor.m in Sources */,
+				33FF6ED41DD5CF2300CD809D /* BStudent.m in Sources */,
 				334E9BB51DD337FE00757AA3 /* Pensioner.m in Sources */,
 				338DAB751DAAA157006BC83F /* ViewController.m in Sources */,
 				3349A9871DD0C4FC007F07D9 /* Znahar.m in Sources */,
