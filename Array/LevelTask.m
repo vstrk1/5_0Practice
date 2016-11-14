@@ -24,10 +24,12 @@
 #import "Pensioner.h"
 #import "Businessman.h"
 #import "BStudent.h"
+#import "TStudent.h"
 
 @interface LevelTask()
 
 @property (strong, nonatomic) Pensioner* pensioner;
+
 @end
 
 @implementation LevelTask
@@ -384,7 +386,6 @@
     gov.pension -= 200.4f;
 }
 
-
 - (void) runBloksTask {
     Patient* patient = [[Patient alloc] init];
     patient.name = @"Changson";
@@ -393,7 +394,7 @@
     patient.headAche = true;
     
     NSLog(@"___________________");
-
+    
     
     testSimpleBlock();
     simpleBlockWithString(@"simple string");
@@ -437,6 +438,35 @@
     for (BStudent *student in sortedArray) {
         NSLog(@"%@: %@, %@;", student, student.fNmame, student.lName);
     }
+}
+
+
+- (void) performTask {
+    TStudent* ts1 = [[TStudent alloc]init];
+    TStudent* ts2 = [[TStudent alloc]init];
+    TStudent* ts3 = [[TStudent alloc]init];
+
+    ts1.name = @"ts1";
+    ts2.name = @"ts2";
+    ts3.name = @"ts3";
+    
+//    [ts1 guessAnswerI:11111 andRange:100000000];
+//    [ts2 guessAnswerI:22222 andRange:100000000];
+//    [ts3 guessAnswerI:33333 andRange:100000000];
+    
+//    [ts1 guessAnswerB:11111 andRange:100000000];
+//    [ts2 guessAnswerB:22222 andRange:100000000];
+//    [ts3 guessAnswerB:33333 andRange:100000000];
+    
+    [ts1 guessAnswerG:11111 andRange:100000000];
+    [ts2 guessAnswerG:22222 andRange:100000000];
+    [ts3 guessAnswerG:33333 andRange:100000000];
+
+
+}
+
+- (void) runThreadTask {
+    [self performTask];
 }
 
 NSComparisonResult (^studentsComparator) (id, id) = ^(id obj1, id obj2) {

@@ -29,4 +29,6 @@
 
 - (void) runBloksTask;
 
+- (void) runThreadTask;
+
 @end

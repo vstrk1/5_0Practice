@@ -26,7 +26,7 @@
     // Override point for customization after application launch.
 
     self.task = [[LevelTask alloc]init];
-    [self.task runBloksTask];
+    [self.task runThreadTask];
     
     return YES;
 }
@@ -49,6 +49,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"%@", [NSThread currentThread]);
     NSLog(@"✅ Application become active initial notification was called!");
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }

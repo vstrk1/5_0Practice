@@ -16,6 +16,7 @@
 		334E9BB21DD3376600757AA3 /* Government.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB11DD3376600757AA3 /* Government.m */; };
 		334E9BB51DD337FE00757AA3 /* Pensioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB41DD337FE00757AA3 /* Pensioner.m */; };
 		334E9BB81DD3383100757AA3 /* Businessman.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E9BB71DD3383100757AA3 /* Businessman.m */; };
+		3373823F1DD77B6C0003D03F /* TStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373823E1DD77B6C0003D03F /* TStudent.m */; };
 		338DAB6F1DAAA157006BC83F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB6E1DAAA157006BC83F /* main.m */; };
 		338DAB721DAAA157006BC83F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB711DAAA157006BC83F /* AppDelegate.m */; };
 		338DAB751DAAA157006BC83F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338DAB741DAAA157006BC83F /* ViewController.m */; };
@@ -75,6 +76,8 @@
 		334E9BB41DD337FE00757AA3 /* Pensioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pensioner.m; sourceTree = "<group>"; };
 		334E9BB61DD3383100757AA3 /* Businessman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Businessman.h; sourceTree = "<group>"; };
 		334E9BB71DD3383100757AA3 /* Businessman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Businessman.m; sourceTree = "<group>"; };
+		3373823D1DD77B6C0003D03F /* TStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TStudent.h; sourceTree = "<group>"; };
+		3373823E1DD77B6C0003D03F /* TStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TStudent.m; sourceTree = "<group>"; };
 		338DAB6A1DAAA157006BC83F /* Array.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Array.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DAB6E1DAAA157006BC83F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		338DAB701DAAA157006BC83F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,15 @@
 			name = Notifications;
 			sourceTree = "<group>";
 		};
+		3373823C1DD77B550003D03F /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				3373823D1DD77B6C0003D03F /* TStudent.h */,
+				3373823E1DD77B6C0003D03F /* TStudent.m */,
+			);
+			name = Threads;
+			sourceTree = "<group>";
+		};
 		338DAB611DAAA157006BC83F = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +195,7 @@
 		338DAB6C1DAAA157006BC83F /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				3373823C1DD77B550003D03F /* Threads */,
 				33FF6ED11DD5CEFD00CD809D /* Blocks */,
 				334E9BAF1DD3372A00757AA3 /* Notifications */,
 				33D8960C1DC691740037B3D4 /* Delegates */,
@@ -444,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33FF6ECF1DD4A50D00CD809D /* CustomAppDelegate.m in Sources */,
+				3373823F1DD77B6C0003D03F /* TStudent.m in Sources */,
 				334E9BB21DD3376600757AA3 /* Government.m in Sources */,
 				33490E4E1DAABF870093EB15 /* Runner.m in Sources */,
 				334E9BB81DD3383100757AA3 /* Businessman.m in Sources */,
