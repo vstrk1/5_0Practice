@@ -31,4 +31,6 @@
 
 - (void) runThreadTask;
 
+- (void) runStringTask;
+
 @end

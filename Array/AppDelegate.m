@@ -26,7 +26,7 @@
     // Override point for customization after application launch.
 
     self.task = [[LevelTask alloc]init];
-    [self.task runThreadTask];
+    [self.task runStringTask];
     
     return YES;
 }
